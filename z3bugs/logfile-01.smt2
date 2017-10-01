@@ -1107,7 +1107,7 @@
 ; ------------------------------------------------------------
 ; State saturation: after preamble
 ;(set-option :timeout 100)
-(set-option :rlimit 40807)
+(set-option :rlimit 10335)
 
 (check-sat)
 
@@ -2525,14 +2525,14 @@
 ;(set-option :timeout 0)
 (push) ; 3
 (assert (not (>= k@9@01 0)))
- (set-option :rlimit 69342) (check-sat) 
+ (set-option :rlimit 53987) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< k@9@01 ($Seq.length hist@5@01))))
- (set-option :rlimit 19501) (check-sat) 
+ (set-option :rlimit 9062) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -2564,7 +2564,7 @@
   :qid |Ref__Integer_value-permImpliesNonNull|)))
 ; State saturation: after contract
 ;(set-option :timeout 50)
- (set-option :rlimit 68541) (check-sat) 
+ (set-option :rlimit 46766) (check-sat) 
 ; unknown
 (push) ; 2
 (declare-const $t@11@01 $Snap)
@@ -2579,14 +2579,14 @@
 ;(set-option :timeout 0)
 (push) ; 4
 (assert (not (>= k@13@01 0)))
- (set-option :rlimit 25170) (check-sat) 
+ (set-option :rlimit 66407) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< k@13@01 ($Seq.length hist@5@01))))
- (set-option :rlimit 11737) (check-sat) 
+ (set-option :rlimit 7308) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -2632,21 +2632,21 @@
 ; [eval] hist[k]
 (push) ; 6
 (assert (not (>= k@15@01 0)))
- (set-option :rlimit 1987) (check-sat) 
+ (set-option :rlimit 1704) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k@15@01 ($Seq.length hist@5@01))))
- (set-option :rlimit 157286) (check-sat) 
+ (set-option :rlimit 104944) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not ($Seq.contains ($Seq.range 0 P@4@01) (inv@14@01 ($Seq.index hist@5@01 k@15@01)))))
- (set-option :rlimit 223912) (check-sat) 
+ (set-option :rlimit 545206) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -2803,14 +2803,14 @@
 ; [eval] hist[k]
 (push) ; 2
 (assert (not (>= k@22@01 0)))
- (set-option :rlimit 4010) (check-sat) 
+ (set-option :rlimit 1252) (check-sat) 
 ; unsat
 (pop) ; 2
 ; 0.00s
 ; 
 (push) ; 2
 (assert (not (< k@22@01 ($Seq.length hist@24@01))))
- (set-option :rlimit 173986) (check-sat) 
+ (set-option :rlimit 37993) (check-sat) 
 ; unsat
 (pop) ; 2
 ; 0.00s
@@ -2818,7 +2818,7 @@
 (assert (not (= ($Seq.index hist@24@01 k@22@01) $Ref.null)))
 ; State saturation: after contract
 ;(set-option :timeout 50)
- (set-option :rlimit 420826) (check-sat) 
+ (set-option :rlimit 442424) (check-sat) 
 ; unknown
 (push) ; 2
 (declare-const $t@29@01 $Snap)
@@ -2832,14 +2832,14 @@
 ;(set-option :timeout 0)
 (push) ; 3
 (assert (not (>= k@22@01 0)))
- (set-option :rlimit 24575) (check-sat) 
+ (set-option :rlimit 11033) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< k@22@01 ($Seq.length hist@24@01))))
- (set-option :rlimit 13067) (check-sat) 
+ (set-option :rlimit 25146) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -2848,14 +2848,14 @@
 ; [eval] hist[k]
 (push) ; 3
 (assert (not (>= k@22@01 0)))
- (set-option :rlimit 6984) (check-sat) 
+ (set-option :rlimit 6006) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< k@22@01 ($Seq.length hist@24@01))))
- (set-option :rlimit 69529) (check-sat) 
+ (set-option :rlimit 24874) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -2871,14 +2871,14 @@
 ; [eval] hist[k]
 (push) ; 3
 (assert (not (>= k@22@01 0)))
- (set-option :rlimit 222002) (check-sat) 
+ (set-option :rlimit 177235) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< k@22@01 ($Seq.length hist@24@01))))
- (set-option :rlimit 87155) (check-sat) 
+ (set-option :rlimit 38582) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -2890,21 +2890,21 @@
 ; [eval] hist[k]
 (push) ; 3
 (assert (not (>= k@22@01 0)))
- (set-option :rlimit 23418) (check-sat) 
+ (set-option :rlimit 12032) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< k@22@01 ($Seq.length hist@24@01))))
- (set-option :rlimit 14656) (check-sat) 
+ (set-option :rlimit 6430) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (or (= $Perm.Write $Perm.No) true)))
- (set-option :rlimit 40170) (check-sat) 
+ (set-option :rlimit 3566) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -2913,14 +2913,14 @@
 ; [eval] hist[k]
 (push) ; 3
 (assert (not (>= k@22@01 0)))
- (set-option :rlimit 27509) (check-sat) 
+ (set-option :rlimit 23355) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< k@22@01 ($Seq.length hist@24@01))))
- (set-option :rlimit 73722) (check-sat) 
+ (set-option :rlimit 29549) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -2980,14 +2980,14 @@
 ; [eval] hist[k]
 (push) ; 3
 (assert (not (>= k@56@01 0)))
- (set-option :rlimit 28450) (check-sat) 
+ (set-option :rlimit 3414) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< k@56@01 ($Seq.length hist@44@01))))
- (set-option :rlimit 31116) (check-sat) 
+ (set-option :rlimit 9540) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -3046,7 +3046,7 @@
 ; [eval] j % step
 (push) ; 5
 (assert (not (not (= step@43@01 0))))
- (set-option :rlimit 2557) (check-sat) 
+ (set-option :rlimit 4958) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
@@ -3067,21 +3067,21 @@
 ; [eval] matrix[j]
 (push) ; 3
 (assert (not (>= j@61@01 0)))
- (set-option :rlimit 17923) (check-sat) 
+ (set-option :rlimit 42010) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< j@61@01 ($Seq.length matrix@45@01))))
- (set-option :rlimit 46832) (check-sat) 
+ (set-option :rlimit 68026) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (not (= 4 0))))
- (set-option :rlimit 11021) (check-sat) 
+ (set-option :rlimit 3021) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -3143,7 +3143,7 @@
 ; [eval] k_fresh_rw_0 % step
 (push) ; 5
 (assert (not (not (= step@43@01 0))))
- (set-option :rlimit 95538) (check-sat) 
+ (set-option :rlimit 80059) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
@@ -3171,14 +3171,14 @@
 ; [eval] matrix[k_fresh_rw_0]
 (push) ; 5
 (assert (not (>= k_fresh_rw_0@64@01 0)))
- (set-option :rlimit 85715) (check-sat) 
+ (set-option :rlimit 66331) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
 ; 
 (push) ; 5
 (assert (not (< k_fresh_rw_0@64@01 ($Seq.length matrix@45@01))))
- (set-option :rlimit 31104) (check-sat) 
+ (set-option :rlimit 40532) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
@@ -3209,7 +3209,7 @@
         (inv@57@01 ($Seq.index matrix@45@01 k_fresh_rw_0@64@01)))
       $Perm.Write
       $Perm.No)))))
- (set-option :rlimit 26791) (check-sat) 
+ (set-option :rlimit 21335) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.01s
@@ -3414,7 +3414,7 @@
   :qid |prog.l83|)))
 ; State saturation: after contract
 ;(set-option :timeout 50)
- (set-option :rlimit 6621) (check-sat) 
+ (set-option :rlimit 6034) (check-sat) 
 ; unknown
 (push) ; 2
 (declare-const $t@68@01 $Snap)
@@ -3454,7 +3454,7 @@
 ;(set-option :timeout 0)
 (push) ; 6
 (assert (not (not (= step@43@01 0))))
- (set-option :rlimit 19280) (check-sat) 
+ (set-option :rlimit 1202) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -3475,21 +3475,21 @@
 ; [eval] matrix[j]
 (push) ; 4
 (assert (not (>= j@76@01 0)))
- (set-option :rlimit 2708) (check-sat) 
+ (set-option :rlimit 6448) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< j@76@01 ($Seq.length matrix@45@01))))
- (set-option :rlimit 56191) (check-sat) 
+ (set-option :rlimit 19531) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (not (= 4 0))))
- (set-option :rlimit 51662) (check-sat) 
+ (set-option :rlimit 24405) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -3541,14 +3541,14 @@
 ; [eval] hist[k]
 (push) ; 4
 (assert (not (>= k@80@01 0)))
- (set-option :rlimit 2737) (check-sat) 
+ (set-option :rlimit 804) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< k@80@01 ($Seq.length hist@44@01))))
- (set-option :rlimit 23181) (check-sat) 
+ (set-option :rlimit 54849) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -3594,14 +3594,14 @@
 ; [eval] hist[k]
 (push) ; 6
 (assert (not (>= k@82@01 0)))
- (set-option :rlimit 13257) (check-sat) 
+ (set-option :rlimit 11448) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k@82@01 ($Seq.length hist@44@01))))
- (set-option :rlimit 124716) (check-sat) 
+ (set-option :rlimit 68271) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -3630,7 +3630,7 @@
             N@41@01)))
       (/ (to_real 1) (to_real 4))
       $Perm.No)))))
- (set-option :rlimit 57940) (check-sat) 
+ (set-option :rlimit 60924) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.01s
@@ -3683,14 +3683,14 @@
 ; [eval] hist[k]
 (push) ; 6
 (assert (not (>= k@82@01 0)))
- (set-option :rlimit 34108) (check-sat) 
+ (set-option :rlimit 32065) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k@82@01 ($Seq.length hist@44@01))))
- (set-option :rlimit 55624) (check-sat) 
+ (set-option :rlimit 10034) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -3719,7 +3719,7 @@
         (inv@57@01 ($Seq.index hist@44@01 k@82@01)))
       $Perm.Write
       $Perm.No)))))
- (set-option :rlimit 12029) (check-sat) 
+ (set-option :rlimit 8258) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.01s
@@ -3773,7 +3773,7 @@
 ; [eval] 0 <= N
 (push) ; 7
 (assert (not (<= 0 N@41@01)))
- (set-option :rlimit 5403) (check-sat) 
+ (set-option :rlimit 3983) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.00s
@@ -3783,7 +3783,7 @@
 ; [eval] step > 0
 (push) ; 7
 (assert (not (> step@43@01 0)))
- (set-option :rlimit 33432) (check-sat) 
+ (set-option :rlimit 11576) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.00s
@@ -3795,7 +3795,7 @@
 ; [eval] M * step
 (push) ; 7
 (assert (not (<= 0 (* M@42@01 step@43@01))))
- (set-option :rlimit 35651) (check-sat) 
+ (set-option :rlimit 7946) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.01s
@@ -3830,7 +3830,7 @@
 ; [eval] k % step
 (push) ; 12
 (assert (not (not (= step@43@01 0))))
- (set-option :rlimit 96191) (check-sat) 
+ (set-option :rlimit 27033) (check-sat) 
 ; unsat
 (pop) ; 12
 ; 0.00s
@@ -3846,7 +3846,7 @@
 ; [eval] k % step
 (push) ; 14
 (assert (not (not (= step@43@01 0))))
- (set-option :rlimit 27475) (check-sat) 
+ (set-option :rlimit 38751) (check-sat) 
 ; unsat
 (pop) ; 14
 ; 0.00s
@@ -3893,14 +3893,14 @@
 ; [eval] matrix[k]
 (push) ; 8
 (assert (not (>= k@84@01 0)))
- (set-option :rlimit 110134) (check-sat) 
+ (set-option :rlimit 187764) (check-sat) 
 ; unsat
 (pop) ; 8
 ; 0.00s
 ; 
 (push) ; 8
 (assert (not (< k@84@01 ($Seq.length matrix@45@01))))
- (set-option :rlimit 169609) (check-sat) 
+ (set-option :rlimit 466118) (check-sat) 
 ; unsat
 (pop) ; 8
 ; 0.00s
@@ -3931,7 +3931,7 @@
     (or (= $k@88@01 $Perm.No) (< $Perm.No $k@88@01)))
   
   ))))
- (set-option :rlimit 11547) (check-sat) 
+ (set-option :rlimit 27999) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.00s
@@ -3975,7 +3975,7 @@
     (= k1@84@01 k2@84@01))
   
   :qid |Ref__Integer_value-rcvrInj|))))
- (set-option :rlimit 311) (check-sat) 
+ (set-option :rlimit 712) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.02s
@@ -4073,7 +4073,7 @@
 ; Done precomputing, updating quantified chunks
 ; State saturation: before repetition
 ;(set-option :timeout 10)
- (set-option :rlimit 8729) (check-sat) 
+ (set-option :rlimit 10849) (check-sat) 
 ; unknown
 ; Constrain original permissions $k@88@01
 (assert (and
@@ -4216,7 +4216,7 @@
     (= (- $k@88@01 (pTaken@90@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 59189) (check-sat) 
+ (set-option :rlimit 126005) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.03s
@@ -5064,7 +5064,7 @@
 ;(set-option :timeout 0)
 (push) ; 4
 (assert (not (>= k@82@01 0)))
- (set-option :rlimit 10559) (check-sat) 
+ (set-option :rlimit 5283) (check-sat) 
 ; unknown
 (pop) ; 4
 ; 0.01s
@@ -5980,7 +5980,7 @@
 ; [eval] k_fresh_rw_0 % step
 (push) ; 6
 (assert (not (not (= step@43@01 0))))
- (set-option :rlimit 87912) (check-sat) 
+ (set-option :rlimit 14461) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -6007,14 +6007,14 @@
 ; [eval] matrix[k_fresh_rw_0]
 (push) ; 6
 (assert (not (>= k_fresh_rw_0@93@01 0)))
- (set-option :rlimit 14569) (check-sat) 
+ (set-option :rlimit 11085) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k_fresh_rw_0@93@01 ($Seq.length matrix@45@01))))
- (set-option :rlimit 112724) (check-sat) 
+ (set-option :rlimit 98637) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -6045,7 +6045,7 @@
             N@41@01)))
       (/ (to_real 1) (to_real 4))
       $Perm.No)))))
- (set-option :rlimit 131825) (check-sat) 
+ (set-option :rlimit 124040) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.02s
@@ -6096,14 +6096,14 @@
 ; [eval] matrix[k_fresh_rw_0]
 (push) ; 6
 (assert (not (>= k_fresh_rw_0@93@01 0)))
- (set-option :rlimit 33139) (check-sat) 
+ (set-option :rlimit 15511) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k_fresh_rw_0@93@01 ($Seq.length matrix@45@01))))
- (set-option :rlimit 23811) (check-sat) 
+ (set-option :rlimit 8497) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -6134,7 +6134,7 @@
         (inv@57@01 ($Seq.index matrix@45@01 k_fresh_rw_0@93@01)))
       $Perm.Write
       $Perm.No)))))
- (set-option :rlimit 7340) (check-sat) 
+ (set-option :rlimit 3393) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.02s
@@ -6492,14 +6492,14 @@
 ; [eval] hist[k]
 (push) ; 3
 (assert (not (>= k@124@01 0)))
- (set-option :rlimit 19688) (check-sat) 
+ (set-option :rlimit 4348) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< k@124@01 ($Seq.length hist@111@01))))
- (set-option :rlimit 3165) (check-sat) 
+ (set-option :rlimit 1491) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -6547,14 +6547,14 @@
 ; [eval] hist[k]
 (push) ; 5
 (assert (not (>= k@127@01 0)))
- (set-option :rlimit 109339) (check-sat) 
+ (set-option :rlimit 57719) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
 ; 
 (push) ; 5
 (assert (not (< k@127@01 ($Seq.length hist@111@01))))
- (set-option :rlimit 201037) (check-sat) 
+ (set-option :rlimit 84409) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
@@ -6563,7 +6563,7 @@
 (assert (not ($Seq.contains
   ($Seq.range 0 P@108@01)
   (inv@125@01 ($Seq.index hist@111@01 k@127@01)))))
- (set-option :rlimit 28681) (check-sat) 
+ (set-option :rlimit 26116) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
@@ -6700,14 +6700,14 @@
 ; [eval] i * step
 (push) ; 2
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 458) (check-sat) 
+ (set-option :rlimit 1325) (check-sat) 
 ; unsat
 (pop) ; 2
 ; 0.01s
 ; 
 (push) ; 2
 (assert (not (not (= 4 0))))
- (set-option :rlimit 39183) (check-sat) 
+ (set-option :rlimit 6944) (check-sat) 
 ; unsat
 (pop) ; 2
 ; 0.00s
@@ -6750,7 +6750,7 @@
 ; [eval] i * step
 (push) ; 2
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 55819) (check-sat) 
+ (set-option :rlimit 51271) (check-sat) 
 ; unsat
 (pop) ; 2
 ; 0.00s
@@ -6773,7 +6773,7 @@
           (+ (* i@107@01 step@105@01) j@106@01))))
       $Perm.Write
       $Perm.No)))))
- (set-option :rlimit 4022) (check-sat) 
+ (set-option :rlimit 15926) (check-sat) 
 ; unsat
 (pop) ; 2
 ; 0.00s
@@ -6820,7 +6820,7 @@
     (+ (* i@107@01 step@105@01) j@106@01)))))
 ; State saturation: after contract
 ;(set-option :timeout 50)
- (set-option :rlimit 167148) (check-sat) 
+ (set-option :rlimit 42789) (check-sat) 
 ; unknown
 (push) ; 2
 (declare-const $t@133@01 $Snap)
@@ -6853,14 +6853,14 @@
 ;(set-option :timeout 0)
 (push) ; 3
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 6991) (check-sat) 
+ (set-option :rlimit 16689) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.01s
 ; 
 (push) ; 3
 (assert (not (not (= 4 0))))
- (set-option :rlimit 2758) (check-sat) 
+ (set-option :rlimit 5546) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -6884,14 +6884,14 @@
 ; [eval] hist[k]
 (push) ; 4
 (assert (not (>= k@144@01 0)))
- (set-option :rlimit 28036) (check-sat) 
+ (set-option :rlimit 10934) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< k@144@01 ($Seq.length hist@111@01))))
- (set-option :rlimit 1569) (check-sat) 
+ (set-option :rlimit 2461) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -6937,14 +6937,14 @@
 ; [eval] hist[k]
 (push) ; 6
 (assert (not (>= k@146@01 0)))
- (set-option :rlimit 72668) (check-sat) 
+ (set-option :rlimit 25067) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k@146@01 ($Seq.length hist@111@01))))
- (set-option :rlimit 32905) (check-sat) 
+ (set-option :rlimit 24194) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -6965,7 +6965,7 @@
         ($Seq.index matrix@112@01 (+ (* i@107@01 step@105@01) j@106@01)))
       (/ (to_real 1) (to_real 4))
       $Perm.No)))))
- (set-option :rlimit 5463) (check-sat) 
+ (set-option :rlimit 23414) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -7012,7 +7012,7 @@
 ; [eval] i * step
 (push) ; 6
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 15787) (check-sat) 
+ (set-option :rlimit 22806) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.01s
@@ -7035,7 +7035,7 @@
         ($Seq.index matrix@112@01 (+ (* i@107@01 step@105@01) j@106@01)))
       (/ (to_real 1) (to_real 4))
       $Perm.No)))))
- (set-option :rlimit 9703) (check-sat) 
+ (set-option :rlimit 3923) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -7242,7 +7242,7 @@
 ; [eval] i * step
 (push) ; 3
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 28312) (check-sat) 
+ (set-option :rlimit 33674) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7265,7 +7265,7 @@
         ($Seq.index matrix@112@01 (+ (* i@107@01 step@105@01) j@106@01)))
       (/ (to_real 1) (to_real 4))
       $Perm.No)))))
- (set-option :rlimit 1458) (check-sat) 
+ (set-option :rlimit 1238) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7310,7 +7310,7 @@
 ; [eval] i * step
 (push) ; 3
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 2364) (check-sat) 
+ (set-option :rlimit 1016) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7333,7 +7333,7 @@
           (+ (* i@107@01 step@105@01) j@106@01))))
       $Perm.Write
       $Perm.No)))))
- (set-option :rlimit 491982) (check-sat) 
+ (set-option :rlimit 307070) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7369,7 +7369,7 @@
 ; [eval] i * step
 (push) ; 3
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 1200) (check-sat) 
+ (set-option :rlimit 682) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7395,7 +7395,7 @@
       ($Seq.contains ($Seq.range 0 P@108@01) (inv@125@01 __flatten_4@153@01))
       $Perm.Write
       $Perm.No)))))
- (set-option :rlimit 51148) (check-sat) 
+ (set-option :rlimit 205260) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7404,7 +7404,7 @@
 (assert (not (>=
   ($FVF.lookup_Ref__Integer_value (as sm@132@01  $FVF<Int>) __flatten_4@153@01)
   0)))
- (set-option :rlimit 124756) (check-sat) 
+ (set-option :rlimit 99025) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7413,7 +7413,7 @@
 (assert (not (<
   ($FVF.lookup_Ref__Integer_value (as sm@132@01  $FVF<Int>) __flatten_4@153@01)
   ($Seq.length hist@111@01))))
- (set-option :rlimit 28123) (check-sat) 
+ (set-option :rlimit 23942) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7425,7 +7425,7 @@
 ; [eval] i * step
 (push) ; 3
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 6200) (check-sat) 
+ (set-option :rlimit 2699) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7451,7 +7451,7 @@
       ($Seq.contains ($Seq.range 0 P@108@01) (inv@125@01 __flatten_7@154@01))
       $Perm.Write
       $Perm.No)))))
- (set-option :rlimit 849) (check-sat) 
+ (set-option :rlimit 496) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7460,7 +7460,7 @@
 (assert (not (>=
   ($FVF.lookup_Ref__Integer_value (as sm@132@01  $FVF<Int>) __flatten_7@154@01)
   0)))
- (set-option :rlimit 29041) (check-sat) 
+ (set-option :rlimit 19736) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7469,7 +7469,7 @@
 (assert (not (<
   ($FVF.lookup_Ref__Integer_value (as sm@132@01  $FVF<Int>) __flatten_7@154@01)
   ($Seq.length hist@111@01))))
- (set-option :rlimit 2197) (check-sat) 
+ (set-option :rlimit 876) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7497,7 +7497,7 @@
           ($FVF.lookup_Ref__Integer_value (as sm@132@01  $FVF<Int>) __flatten_7@154@01))))
       $Perm.Write
       $Perm.No)))))
- (set-option :rlimit 4968) (check-sat) 
+ (set-option :rlimit 7576) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7544,7 +7544,7 @@
 ; Done precomputing, updating quantified chunks
 ; State saturation: before repetition
 ;(set-option :timeout 10)
- (set-option :rlimit 830598) (check-sat) 
+ (set-option :rlimit 313094) (check-sat) 
 ; unknown
 ; Chunk depleted?
 ;(set-option :timeout 500)
@@ -7560,7 +7560,7 @@
     $Perm.No)
   
   ))))
- (set-option :rlimit 4471) (check-sat) 
+ (set-option :rlimit 15669) (check-sat) 
 ; unknown
 (pop) ; 3
 ; 0.02s
@@ -7577,7 +7577,7 @@
     (= (- $Perm.Write (pTaken@156@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 25084) (check-sat) 
+ (set-option :rlimit 20082) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7605,14 +7605,14 @@
 ;(set-option :timeout 0)
 (push) ; 3
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 60149) (check-sat) 
+ (set-option :rlimit 12998) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.04s
 ; 
 (push) ; 3
 (assert (not (not (= 4 0))))
- (set-option :rlimit 13523) (check-sat) 
+ (set-option :rlimit 3608) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7657,7 +7657,7 @@
 ; Done precomputing, updating quantified chunks
 ; State saturation: before repetition
 ;(set-option :timeout 10)
- (set-option :rlimit 72340) (check-sat) 
+ (set-option :rlimit 24524) (check-sat) 
 ; unknown
 ; Chunk depleted?
 ;(set-option :timeout 500)
@@ -7674,7 +7674,7 @@
       matrix@112@01
       (+ (* i@107@01 step@105@01) j@106@01))))
   $Perm.No)))
- (set-option :rlimit 109393) (check-sat) 
+ (set-option :rlimit 60969) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7687,7 +7687,7 @@
     (= (- (/ (to_real 1) (to_real 4)) (pTaken@159@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 7943) (check-sat) 
+ (set-option :rlimit 13639) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7751,14 +7751,14 @@
 ;(set-option :timeout 0)
 (push) ; 4
 (assert (not (>= k@163@01 0)))
- (set-option :rlimit 26098) (check-sat) 
+ (set-option :rlimit 55854) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< k@163@01 ($Seq.length hist@111@01))))
- (set-option :rlimit 134712) (check-sat) 
+ (set-option :rlimit 134800) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -7773,7 +7773,7 @@
     (or (= $Perm.Write $Perm.No) true))
   
   ))))
- (set-option :rlimit 8527) (check-sat) 
+ (set-option :rlimit 23632) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7789,7 +7789,7 @@
     (= k1@163@01 k2@163@01))
   
   :qid |Ref__Integer_value-rcvrInj|))))
- (set-option :rlimit 14227) (check-sat) 
+ (set-option :rlimit 48661) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7837,7 +7837,7 @@
 ; Done precomputing, updating quantified chunks
 ; State saturation: before repetition
 ;(set-option :timeout 10)
- (set-option :rlimit 23988) (check-sat) 
+ (set-option :rlimit 17952) (check-sat) 
 ; unknown
 ; Chunk depleted?
 ;(set-option :timeout 500)
@@ -7855,7 +7855,7 @@
     $Perm.No)
   
   ))))
- (set-option :rlimit 99459) (check-sat) 
+ (set-option :rlimit 65730) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.01s
@@ -7868,7 +7868,7 @@
     (= (- $Perm.Write (pTaken@165@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 48990) (check-sat) 
+ (set-option :rlimit 22359) (check-sat) 
 ; unknown
 (pop) ; 3
 ; 0.01s
@@ -7891,7 +7891,7 @@
       hist@111@01
       ($FVF.lookup_Ref__Integer_value (as sm@132@01  $FVF<Int>) __flatten_4@153@01))))
   $Perm.No)))
- (set-option :rlimit 32734) (check-sat) 
+ (set-option :rlimit 16610) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -7904,7 +7904,7 @@
     (= (- (- $Perm.Write (pTaken@165@01 r)) (pTaken@166@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 11339) (check-sat) 
+ (set-option :rlimit 14143) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.01s
@@ -7986,14 +7986,14 @@
 ;(set-option :timeout 0)
 (push) ; 6
 (assert (not (>= k@168@01 0)))
- (set-option :rlimit 129316) (check-sat) 
+ (set-option :rlimit 70317) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k@168@01 ($Seq.length hist@111@01))))
- (set-option :rlimit 25039) (check-sat) 
+ (set-option :rlimit 12966) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -8025,7 +8025,7 @@
         $Perm.Write
         $Perm.No)
       (pTaken@156@01 ($Seq.index hist@111@01 k@168@01)))))))
- (set-option :rlimit 1013) (check-sat) 
+ (set-option :rlimit 369) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.01s
@@ -8111,7 +8111,7 @@
 ; [eval] i * step
 (push) ; 6
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 12706) (check-sat) 
+ (set-option :rlimit 19759) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.04s
@@ -8147,7 +8147,7 @@
       (pTaken@156@01 ($Seq.index
         matrix@112@01
         (+ (* i@107@01 step@105@01) j@106@01))))))))
- (set-option :rlimit 26113) (check-sat) 
+ (set-option :rlimit 18089) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -8466,7 +8466,7 @@
           0)))
     :pattern (($Seq.index hist@111@01 k@168@01))
     :qid |prog.l108|)))))
- (set-option :rlimit 49281) (check-sat) 
+ (set-option :rlimit 16904) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.03s
@@ -8512,7 +8512,7 @@
 ; [eval] i * step
 (push) ; 3
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 308448) (check-sat) 
+ (set-option :rlimit 122184) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -8548,7 +8548,7 @@
       (pTaken@156@01 ($Seq.index
         matrix@112@01
         (+ (* i@107@01 step@105@01) j@106@01))))))))
- (set-option :rlimit 129796) (check-sat) 
+ (set-option :rlimit 60897) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -8632,7 +8632,7 @@
 ; [eval] i * step
 (push) ; 3
 (assert (not (>= (+ (* i@107@01 step@105@01) j@106@01) 0)))
- (set-option :rlimit 24084) (check-sat) 
+ (set-option :rlimit 4111) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -8655,7 +8655,7 @@
           (+ (* i@107@01 step@105@01) j@106@01))))
       $Perm.Write
       $Perm.No)))))
- (set-option :rlimit 14408) (check-sat) 
+ (set-option :rlimit 17908) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -8668,7 +8668,7 @@
   ($FVF.lookup_Ref__Integer_value (as sm@132@01  $FVF<Int>) ($Seq.index
     matrix@112@01
     (+ (* i@107@01 step@105@01) j@106@01))))))
- (set-option :rlimit 4613) (check-sat) 
+ (set-option :rlimit 23341) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -8751,7 +8751,7 @@
 ; [eval] j1 % step
 (push) ; 5
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 16705) (check-sat) 
+ (set-option :rlimit 6807) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
@@ -8772,21 +8772,21 @@
 ; [eval] matrix[j1]
 (push) ; 3
 (assert (not (>= j1@194@01 0)))
- (set-option :rlimit 14922) (check-sat) 
+ (set-option :rlimit 23135) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< j1@194@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 334) (check-sat) 
+ (set-option :rlimit 297) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (not (= 2 0))))
- (set-option :rlimit 99945) (check-sat) 
+ (set-option :rlimit 386534) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -8852,7 +8852,7 @@
 ; [eval] k_fresh_rw_0 % step
 (push) ; 5
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 66119) (check-sat) 
+ (set-option :rlimit 7052) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
@@ -8880,14 +8880,14 @@
 ; [eval] matrix[k_fresh_rw_0]
 (push) ; 5
 (assert (not (>= k_fresh_rw_0@199@01 0)))
- (set-option :rlimit 24804) (check-sat) 
+ (set-option :rlimit 50128) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
 ; 
 (push) ; 5
 (assert (not (< k_fresh_rw_0@199@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 80846) (check-sat) 
+ (set-option :rlimit 239403) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
@@ -8906,7 +8906,7 @@
         (inv@196@01 ($Seq.index matrix@181@01 k_fresh_rw_0@199@01))
         step@180@01)
       N@179@01)))))
- (set-option :rlimit 6577) (check-sat) 
+ (set-option :rlimit 2235) (check-sat) 
 ; unsat
 (pop) ; 5
 ; 0.00s
@@ -9084,14 +9084,14 @@
 ; [eval] hist[i1]
 (push) ; 3
 (assert (not (>= i1@203@01 0)))
- (set-option :rlimit 21477) (check-sat) 
+ (set-option :rlimit 19434) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
 ; 
 (push) ; 3
 (assert (not (< i1@203@01 ($Seq.length hist@183@01))))
- (set-option :rlimit 1110285) (check-sat) 
+ (set-option :rlimit 206226) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -9123,7 +9123,7 @@
   :qid |Ref__Integer_value-permImpliesNonNull|)))
 ; State saturation: after contract
 ;(set-option :timeout 50)
- (set-option :rlimit 15829) (check-sat) 
+ (set-option :rlimit 17794) (check-sat) 
 ; unknown
 (push) ; 2
 (declare-const $t@205@01 $Snap)
@@ -9165,7 +9165,7 @@
 ;(set-option :timeout 0)
 (push) ; 6
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 39314) (check-sat) 
+ (set-option :rlimit 9670) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -9186,21 +9186,21 @@
 ; [eval] matrix[j1]
 (push) ; 4
 (assert (not (>= j1@213@01 0)))
- (set-option :rlimit 8539) (check-sat) 
+ (set-option :rlimit 12941) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< j1@213@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 157476) (check-sat) 
+ (set-option :rlimit 30768) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (not (= 2 0))))
- (set-option :rlimit 211940) (check-sat) 
+ (set-option :rlimit 86003) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -9254,14 +9254,14 @@
 ; [eval] hist[i1]
 (push) ; 4
 (assert (not (>= i1@217@01 0)))
- (set-option :rlimit 58593) (check-sat) 
+ (set-option :rlimit 100290) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< i1@217@01 ($Seq.length hist@183@01))))
- (set-option :rlimit 297524) (check-sat) 
+ (set-option :rlimit 289574) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -9307,14 +9307,14 @@
 ; [eval] hist[k]
 (push) ; 6
 (assert (not (>= k@219@01 0)))
- (set-option :rlimit 15360) (check-sat) 
+ (set-option :rlimit 1364) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k@219@01 ($Seq.length hist@183@01))))
- (set-option :rlimit 19975) (check-sat) 
+ (set-option :rlimit 9427) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -9343,7 +9343,7 @@
             N@179@01)))
       (/ (to_real 1) (to_real 2))
       $Perm.No)))))
- (set-option :rlimit 89146) (check-sat) 
+ (set-option :rlimit 170077) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.01s
@@ -9398,7 +9398,7 @@
 ; [eval] 0 <= N
 (push) ; 7
 (assert (not (<= 0 N@179@01)))
- (set-option :rlimit 25755) (check-sat) 
+ (set-option :rlimit 8065) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.00s
@@ -9408,7 +9408,7 @@
 ; [eval] step > 0
 (push) ; 7
 (assert (not (> step@180@01 0)))
- (set-option :rlimit 60712) (check-sat) 
+ (set-option :rlimit 44641) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.00s
@@ -9420,7 +9420,7 @@
 ; [eval] M * step
 (push) ; 7
 (assert (not (<= 0 (* M@178@01 step@180@01))))
- (set-option :rlimit 98224) (check-sat) 
+ (set-option :rlimit 24604) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.01s
@@ -9455,7 +9455,7 @@
 ; [eval] k % step
 (push) ; 12
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 88161) (check-sat) 
+ (set-option :rlimit 20858) (check-sat) 
 ; unsat
 (pop) ; 12
 ; 0.00s
@@ -9471,7 +9471,7 @@
 ; [eval] k % step
 (push) ; 14
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 4314) (check-sat) 
+ (set-option :rlimit 9544) (check-sat) 
 ; unsat
 (pop) ; 14
 ; 0.00s
@@ -9518,14 +9518,14 @@
 ; [eval] matrix[k]
 (push) ; 8
 (assert (not (>= k@221@01 0)))
- (set-option :rlimit 19867) (check-sat) 
+ (set-option :rlimit 4179) (check-sat) 
 ; unsat
 (pop) ; 8
 ; 0.00s
 ; 
 (push) ; 8
 (assert (not (< k@221@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 194625) (check-sat) 
+ (set-option :rlimit 136287) (check-sat) 
 ; unsat
 (pop) ; 8
 ; 0.00s
@@ -9556,7 +9556,7 @@
     (or (= $k@225@01 $Perm.No) (< $Perm.No $k@225@01)))
   
   ))))
- (set-option :rlimit 2889) (check-sat) 
+ (set-option :rlimit 1145) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.00s
@@ -9602,7 +9602,7 @@
     (= k1@221@01 k2@221@01))
   
   :qid |Ref__Integer_value-rcvrInj|))))
- (set-option :rlimit 9770) (check-sat) 
+ (set-option :rlimit 3791) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.02s
@@ -9702,7 +9702,7 @@
 ; Done precomputing, updating quantified chunks
 ; State saturation: before repetition
 ;(set-option :timeout 10)
- (set-option :rlimit 23549) (check-sat) 
+ (set-option :rlimit 13760) (check-sat) 
 ; unknown
 ; Constrain original permissions $k@225@01
 (assert (and
@@ -9853,7 +9853,7 @@
     (= (- $k@225@01 (pTaken@227@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 55413) (check-sat) 
+ (set-option :rlimit 24213) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.03s
@@ -10687,7 +10687,7 @@
 ;(set-option :timeout 0)
 (push) ; 4
 (assert (not (>= k@219@01 0)))
- (set-option :rlimit 141406) (check-sat) 
+ (set-option :rlimit 63836) (check-sat) 
 ; unknown
 (pop) ; 4
 ; 0.01s
@@ -11511,7 +11511,7 @@
 ; [eval] k_fresh_rw_0 % step
 (push) ; 6
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 142722) (check-sat) 
+ (set-option :rlimit 43428) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -11538,14 +11538,14 @@
 ; [eval] matrix[k_fresh_rw_0]
 (push) ; 6
 (assert (not (>= k_fresh_rw_0@230@01 0)))
- (set-option :rlimit 64554) (check-sat) 
+ (set-option :rlimit 109511) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k_fresh_rw_0@230@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 34015) (check-sat) 
+ (set-option :rlimit 29789) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -11576,7 +11576,7 @@
             N@179@01)))
       (/ (to_real 1) (to_real 2))
       $Perm.No)))))
- (set-option :rlimit 6612) (check-sat) 
+ (set-option :rlimit 4244) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.04s
@@ -11627,14 +11627,14 @@
 ; [eval] matrix[k_fresh_rw_0]
 (push) ; 6
 (assert (not (>= k_fresh_rw_0@230@01 0)))
- (set-option :rlimit 9893) (check-sat) 
+ (set-option :rlimit 28042) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k_fresh_rw_0@230@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 22376) (check-sat) 
+ (set-option :rlimit 36863) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -11665,7 +11665,7 @@
             N@179@01)))
       (/ (to_real 1) (to_real 2))
       $Perm.No)))))
- (set-option :rlimit 81414) (check-sat) 
+ (set-option :rlimit 67543) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.04s
@@ -11996,14 +11996,14 @@
 ; [eval] hist[k]
 (push) ; 4
 (assert (not (>= k@233@01 0)))
- (set-option :rlimit 51129) (check-sat) 
+ (set-option :rlimit 29801) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< k@233@01 ($Seq.length hist@183@01))))
- (set-option :rlimit 76701) (check-sat) 
+ (set-option :rlimit 9921) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -12018,7 +12018,7 @@
     (or (= $Perm.Write $Perm.No) true))
   
   ))))
- (set-option :rlimit 1330688) (check-sat) 
+ (set-option :rlimit 1365791) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -12034,7 +12034,7 @@
     (= k1@233@01 k2@233@01))
   
   :qid |Ref__Integer_value-rcvrInj|))))
- (set-option :rlimit 384599) (check-sat) 
+ (set-option :rlimit 281195) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -12082,7 +12082,7 @@
 ; Done precomputing, updating quantified chunks
 ; State saturation: before repetition
 ;(set-option :timeout 10)
- (set-option :rlimit 7966) (check-sat) 
+ (set-option :rlimit 15164) (check-sat) 
 ; unknown
 ; Chunk depleted?
 ;(set-option :timeout 500)
@@ -12098,7 +12098,7 @@
     $Perm.No)
   
   ))))
- (set-option :rlimit 62965) (check-sat) 
+ (set-option :rlimit 16852) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.01s
@@ -12111,7 +12111,7 @@
     (= (- $Perm.Write (pTaken@235@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 23130) (check-sat) 
+ (set-option :rlimit 9844) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -12176,14 +12176,14 @@
 ;(set-option :timeout 0)
 (push) ; 4
 (assert (not (>= k@240@01 0)))
- (set-option :rlimit 12138) (check-sat) 
+ (set-option :rlimit 1565) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< k@240@01 ($Seq.length hist@183@01))))
- (set-option :rlimit 28800) (check-sat) 
+ (set-option :rlimit 16457) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -12229,14 +12229,14 @@
 ; [eval] hist[k]
 (push) ; 6
 (assert (not (>= k@242@01 0)))
- (set-option :rlimit 57111) (check-sat) 
+ (set-option :rlimit 122604) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k@242@01 ($Seq.length hist@183@01))))
- (set-option :rlimit 7076) (check-sat) 
+ (set-option :rlimit 4609) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -12265,7 +12265,7 @@
             N@179@01)))
       (/ (to_real 1) (to_real 2))
       $Perm.No)))))
- (set-option :rlimit 11321) (check-sat) 
+ (set-option :rlimit 18938) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.01s
@@ -12514,7 +12514,7 @@
     :qid |prog.l56|))))
 ; State saturation: after contract
 ;(set-option :timeout 50)
- (set-option :rlimit 3551) (check-sat) 
+ (set-option :rlimit 1863) (check-sat) 
 ; unknown
 ; [exec]
 ; Ref__loop_main_113(diz, N, M, step, hist, matrix, P)
@@ -12534,14 +12534,14 @@
 ;(set-option :timeout 0)
 (push) ; 4
 (assert (not (>= k@244@01 0)))
- (set-option :rlimit 15488) (check-sat) 
+ (set-option :rlimit 21455) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< k@244@01 ($Seq.length hist@183@01))))
- (set-option :rlimit 33096) (check-sat) 
+ (set-option :rlimit 8538) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -12556,7 +12556,7 @@
     (or (= $Perm.Write $Perm.No) true))
   
   ))))
- (set-option :rlimit 9219) (check-sat) 
+ (set-option :rlimit 8308) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -12572,7 +12572,7 @@
     (= k1@244@01 k2@244@01))
   
   :qid |Ref__Integer_value-rcvrInj|))))
- (set-option :rlimit 14937) (check-sat) 
+ (set-option :rlimit 13319) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -12620,7 +12620,7 @@
 ; Done precomputing, updating quantified chunks
 ; State saturation: before repetition
 ;(set-option :timeout 10)
- (set-option :rlimit 216242) (check-sat) 
+ (set-option :rlimit 250007) (check-sat) 
 ; unknown
 ; Chunk depleted?
 ;(set-option :timeout 500)
@@ -12636,7 +12636,7 @@
     $Perm.No)
   
   ))))
- (set-option :rlimit 31960) (check-sat) 
+ (set-option :rlimit 5595) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.01s
@@ -12649,7 +12649,7 @@
     (= (- $Perm.Write (pTaken@246@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 242728) (check-sat) 
+ (set-option :rlimit 754470) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -12722,7 +12722,7 @@
 ;(set-option :timeout 0)
 (push) ; 6
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 20843) (check-sat) 
+ (set-option :rlimit 11910) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -12742,7 +12742,7 @@
     (< (mod j@249@01 step@180@01) N@179@01))))
 (push) ; 4
 (assert (not (not (= 4 0))))
- (set-option :rlimit 219876) (check-sat) 
+ (set-option :rlimit 200078) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -12750,14 +12750,14 @@
 ; [eval] matrix[j]
 (push) ; 4
 (assert (not (>= j@249@01 0)))
- (set-option :rlimit 51953) (check-sat) 
+ (set-option :rlimit 62002) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< j@249@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 9392) (check-sat) 
+ (set-option :rlimit 2472) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -12776,7 +12776,7 @@
     (or (= (/ (to_real 1) (to_real 4)) $Perm.No) true))
   
   ))))
- (set-option :rlimit 103936) (check-sat) 
+ (set-option :rlimit 216052) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -12802,7 +12802,7 @@
     (= j1@249@01 j2@249@01))
   
   :qid |Ref__Integer_value-rcvrInj|))))
- (set-option :rlimit 2019) (check-sat) 
+ (set-option :rlimit 465) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -12852,7 +12852,7 @@
 ; Done precomputing, updating quantified chunks
 ; State saturation: before repetition
 ;(set-option :timeout 10)
- (set-option :rlimit 92072) (check-sat) 
+ (set-option :rlimit 86543) (check-sat) 
 ; unknown
 ; Chunk depleted?
 ;(set-option :timeout 500)
@@ -12874,7 +12874,7 @@
     $Perm.No)
   
   ))))
- (set-option :rlimit 79559) (check-sat) 
+ (set-option :rlimit 135178) (check-sat) 
 ; unknown
 (pop) ; 3
 ; 0.05s
@@ -12891,7 +12891,7 @@
     (= (- (/ (to_real 1) (to_real 4)) (pTaken@252@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 1988) (check-sat) 
+ (set-option :rlimit 1818) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.01s
@@ -12946,7 +12946,7 @@
 ;(set-option :timeout 0)
 (push) ; 6
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 15646) (check-sat) 
+ (set-option :rlimit 12439) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -12974,14 +12974,14 @@
 ; [eval] matrix[k_fresh_rw_0]
 (push) ; 6
 (assert (not (>= k_fresh_rw_0@254@01 0)))
- (set-option :rlimit 2735) (check-sat) 
+ (set-option :rlimit 1107) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k_fresh_rw_0@254@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 27227) (check-sat) 
+ (set-option :rlimit 8723) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -13012,7 +13012,7 @@
             N@179@01)))
       (/ (to_real 1) (to_real 2))
       $Perm.No)))))
- (set-option :rlimit 31528) (check-sat) 
+ (set-option :rlimit 46664) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.01s
@@ -13235,7 +13235,7 @@
       matrix@181@01
       k_fresh_rw_0@254@01))))
   :qid |prog.l83|))))
- (set-option :rlimit 337499) (check-sat) 
+ (set-option :rlimit 434144) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.01s
@@ -13298,7 +13298,7 @@
 ; [eval] j % step
 (push) ; 6
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 6352) (check-sat) 
+ (set-option :rlimit 5753) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -13319,21 +13319,21 @@
 ; [eval] matrix[j]
 (push) ; 4
 (assert (not (>= j@265@01 0)))
- (set-option :rlimit 8956) (check-sat) 
+ (set-option :rlimit 7954) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< j@265@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 161511) (check-sat) 
+ (set-option :rlimit 253058) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (not (= 4 0))))
- (set-option :rlimit 61575) (check-sat) 
+ (set-option :rlimit 74892) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -13387,14 +13387,14 @@
 ; [eval] hist[k]
 (push) ; 4
 (assert (not (>= k@269@01 0)))
- (set-option :rlimit 5795) (check-sat) 
+ (set-option :rlimit 5630) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< k@269@01 ($Seq.length hist@183@01))))
- (set-option :rlimit 13732) (check-sat) 
+ (set-option :rlimit 10400) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -13440,14 +13440,14 @@
 ; [eval] hist[k]
 (push) ; 6
 (assert (not (>= k@271@01 0)))
- (set-option :rlimit 93027) (check-sat) 
+ (set-option :rlimit 93536) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k@271@01 ($Seq.length hist@183@01))))
- (set-option :rlimit 6559) (check-sat) 
+ (set-option :rlimit 7301) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -13493,7 +13493,7 @@
         (/ (to_real 1) (to_real 2))
         $Perm.No)
       (pTaken@252@01 ($Seq.index hist@183@01 k@271@01)))))))
- (set-option :rlimit 4447) (check-sat) 
+ (set-option :rlimit 13785) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.04s
@@ -13593,14 +13593,14 @@
 ; [eval] hist[k]
 (push) ; 6
 (assert (not (>= k@271@01 0)))
- (set-option :rlimit 891) (check-sat) 
+ (set-option :rlimit 518) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k@271@01 ($Seq.length hist@183@01))))
- (set-option :rlimit 6982) (check-sat) 
+ (set-option :rlimit 2523) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -13629,7 +13629,7 @@
             N@179@01)))
       (/ (to_real 1) (to_real 2))
       $Perm.No)))))
- (set-option :rlimit 35556) (check-sat) 
+ (set-option :rlimit 14985) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.01s
@@ -13683,7 +13683,7 @@
 ; [eval] 0 <= N
 (push) ; 7
 (assert (not (<= 0 N@179@01)))
- (set-option :rlimit 2730) (check-sat) 
+ (set-option :rlimit 7105) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.00s
@@ -13693,7 +13693,7 @@
 ; [eval] step > 0
 (push) ; 7
 (assert (not (> step@180@01 0)))
- (set-option :rlimit 230904) (check-sat) 
+ (set-option :rlimit 1099132) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.00s
@@ -13705,7 +13705,7 @@
 ; [eval] M * step
 (push) ; 7
 (assert (not (<= 0 (* M@178@01 step@180@01))))
- (set-option :rlimit 20243) (check-sat) 
+ (set-option :rlimit 58795) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.03s
@@ -13740,7 +13740,7 @@
 ; [eval] k % step
 (push) ; 12
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 40770) (check-sat) 
+ (set-option :rlimit 12933) (check-sat) 
 ; unsat
 (pop) ; 12
 ; 0.00s
@@ -13756,7 +13756,7 @@
 ; [eval] k % step
 (push) ; 14
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 102255) (check-sat) 
+ (set-option :rlimit 80525) (check-sat) 
 ; unsat
 (pop) ; 14
 ; 0.00s
@@ -13803,14 +13803,14 @@
 ; [eval] matrix[k]
 (push) ; 8
 (assert (not (>= k@273@01 0)))
- (set-option :rlimit 110983) (check-sat) 
+ (set-option :rlimit 167921) (check-sat) 
 ; unsat
 (pop) ; 8
 ; 0.00s
 ; 
 (push) ; 8
 (assert (not (< k@273@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 20348) (check-sat) 
+ (set-option :rlimit 44971) (check-sat) 
 ; unsat
 (pop) ; 8
 ; 0.00s
@@ -13841,7 +13841,7 @@
     (or (= $k@277@01 $Perm.No) (< $Perm.No $k@277@01)))
   
   ))))
- (set-option :rlimit 24364) (check-sat) 
+ (set-option :rlimit 37814) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.00s
@@ -13887,7 +13887,7 @@
     (= k1@273@01 k2@273@01))
   
   :qid |Ref__Integer_value-rcvrInj|))))
- (set-option :rlimit 12557) (check-sat) 
+ (set-option :rlimit 14424) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.03s
@@ -14019,7 +14019,7 @@
 ; Done precomputing, updating quantified chunks
 ; State saturation: before repetition
 ;(set-option :timeout 10)
- (set-option :rlimit 26402) (check-sat) 
+ (set-option :rlimit 6787) (check-sat) 
 ; unknown
 ; Constrain original permissions $k@277@01
 (assert (and
@@ -14170,7 +14170,7 @@
     (= (- $k@277@01 (pTaken@279@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 38360) (check-sat) 
+ (set-option :rlimit 14168) (check-sat) 
 ; unsat
 (pop) ; 7
 ; 0.03s
@@ -15338,7 +15338,7 @@
 ;(set-option :timeout 0)
 (push) ; 4
 (assert (not (>= k@271@01 0)))
- (set-option :rlimit 170289) (check-sat) 
+ (set-option :rlimit 250866) (check-sat) 
 ; unknown
 (pop) ; 4
 ; 0.01s
@@ -16522,7 +16522,7 @@
 ; [eval] k_fresh_rw_0 % step
 (push) ; 6
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 2920) (check-sat) 
+ (set-option :rlimit 2085) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -16549,14 +16549,14 @@
 ; [eval] matrix[k_fresh_rw_0]
 (push) ; 6
 (assert (not (>= k_fresh_rw_0@283@01 0)))
- (set-option :rlimit 9846) (check-sat) 
+ (set-option :rlimit 45427) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k_fresh_rw_0@283@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 3845) (check-sat) 
+ (set-option :rlimit 5203) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -16606,7 +16606,7 @@
         (/ (to_real 1) (to_real 2))
         $Perm.No)
       (pTaken@252@01 ($Seq.index matrix@181@01 k_fresh_rw_0@283@01)))))))
- (set-option :rlimit 16945) (check-sat) 
+ (set-option :rlimit 11890) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.06s
@@ -16704,14 +16704,14 @@
 ; [eval] matrix[k_fresh_rw_0]
 (push) ; 6
 (assert (not (>= k_fresh_rw_0@283@01 0)))
- (set-option :rlimit 46377) (check-sat) 
+ (set-option :rlimit 218801) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
 ; 
 (push) ; 6
 (assert (not (< k_fresh_rw_0@283@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 25040) (check-sat) 
+ (set-option :rlimit 30606) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -16742,7 +16742,7 @@
             N@179@01)))
       (/ (to_real 1) (to_real 2))
       $Perm.No)))))
- (set-option :rlimit 41581) (check-sat) 
+ (set-option :rlimit 196435) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.05s
@@ -17153,7 +17153,7 @@
   :qid |prog.l89|)))
 ; State saturation: after contract
 ;(set-option :timeout 50)
- (set-option :rlimit 3318) (check-sat) 
+ (set-option :rlimit 1229) (check-sat) 
 ; unknown
 ; [eval] M > 0
 ; [eval] N > 0
@@ -17178,7 +17178,7 @@
 ;(set-option :timeout 0)
 (push) ; 6
 (assert (not (not (= step@180@01 0))))
- (set-option :rlimit 783797) (check-sat) 
+ (set-option :rlimit 104347) (check-sat) 
 ; unsat
 (pop) ; 6
 ; 0.00s
@@ -17198,7 +17198,7 @@
     (< (mod j1@285@01 step@180@01) N@179@01))))
 (push) ; 4
 (assert (not (not (= 2 0))))
- (set-option :rlimit 149410) (check-sat) 
+ (set-option :rlimit 149355) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -17206,14 +17206,14 @@
 ; [eval] matrix[j1]
 (push) ; 4
 (assert (not (>= j1@285@01 0)))
- (set-option :rlimit 190960) (check-sat) 
+ (set-option :rlimit 241202) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
 ; 
 (push) ; 4
 (assert (not (< j1@285@01 ($Seq.length matrix@181@01))))
- (set-option :rlimit 3140) (check-sat) 
+ (set-option :rlimit 1990) (check-sat) 
 ; unsat
 (pop) ; 4
 ; 0.00s
@@ -17232,7 +17232,7 @@
     (or (= (/ (to_real 1) (to_real 2)) $Perm.No) true))
   
   ))))
- (set-option :rlimit 2895) (check-sat) 
+ (set-option :rlimit 1086) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.00s
@@ -17258,7 +17258,7 @@
     (= j11@285@01 j12@285@01))
   
   :qid |Ref__Integer_value-rcvrInj|))))
- (set-option :rlimit 35449) (check-sat) 
+ (set-option :rlimit 51206) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.01s
@@ -17346,7 +17346,7 @@
 ; Done precomputing, updating quantified chunks
 ; State saturation: before repetition
 ;(set-option :timeout 10)
- (set-option :rlimit 94432) (check-sat) 
+ (set-option :rlimit 183914) (check-sat) 
 ; unknown
 ; Chunk depleted?
 ;(set-option :timeout 500)
@@ -17368,7 +17368,7 @@
     $Perm.No)
   
   ))))
- (set-option :rlimit 2932) (check-sat) 
+ (set-option :rlimit 1874) (check-sat) 
 ; unsat
 (pop) ; 3
 ; 0.09s
@@ -17385,7 +17385,7 @@
     (= (- (/ (to_real 1) (to_real 2)) (pTaken@288@01 r)) $Perm.No))
   
   ))))
- (set-option :rlimit 439610) (check-sat) 
+ (set-option :rlimit 73345) (check-sat) 
 ; unknown
 (pop) ; 3
 ; ASSERTION VIOLATION
